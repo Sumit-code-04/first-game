@@ -18,7 +18,7 @@ function startMove() {
 
   interval = setInterval(function() {
 
-    angle += 8;
+    angle += 9;
 
     let x = centerX + radius * Math.cos(angle * Math.PI / 190);
     let y = centerY + radius * Math.sin(angle * Math.PI / 190);
