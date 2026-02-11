@@ -1,0 +1,78 @@
+*{
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  background-image: url(images/galaxy.gif);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  text-align: center;
+  margin-top: 1%;
+  position: relative;
+ 
+}
+.container{
+  background-image: url(images/road.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: inline-block;
+  position: fixed;
+  height: 750px;
+  width: 650px;
+  position: relative;
+  text-align: center;
+  
+}
+
+.img-container-out-later{
+  font-size: 12px;
+  display: inline-block;
+  border-radius: 50%;
+  position: relative;
+  color: white;
+  top: 40px;
+  height: 490px;
+  width: 640px;
+  display: flow-root;
+}
+.img-container-out-later img{
+  display: inline-block;
+  position: absolute;
+  padding: 15px 15px;
+  margin-top: -20px;
+}
+.img-container-out-later p{
+  display: inline-block;
+  position: absolute;
+  bottom: 0px;
+  color: rgb(238, 224, 224);
+  background-color: black;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.combine{
+   display: inline-block;
+   position: absolute;
+}
+.inner-later{
+  height: 320px;
+  width: 380px;
+  margin-top: 15%;
+  margin-left: 20%;
+  display: block;
+  border-radius: 50%;
+  justify-items: center;
+  display: block;
+  position: sticky;
+}
+img:hover{
+  background-color:rgb(244, 148, 148);
+  border-radius: 50%;
+  padding: 2px 2px;
+  cursor: pointer;
+}
+
