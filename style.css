@@ -108,8 +108,8 @@ body{
   
 }
 .custom-cursor {
-  width: 60px;
-  height: 60px;
+  width: 80px;
+  height: 80px;
   background-image: url('images/hand08.png'); 
   background-size: contain;
   background-repeat: no-repeat;
