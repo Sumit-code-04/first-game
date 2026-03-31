@@ -34,11 +34,27 @@ function handleInput(e) {
     relativeX = mouseX - (rect.left + window.scrollX);
     relativeY = mouseY - (rect.top + window.scrollY);
 
+<<<<<<< HEAD
     if(cursor) {
         cursor.style.left = mouseX + 'px';
         cursor.style.top = mouseY + 'px';
         cursor.style.display = "block"; 
     }
+=======
+  interval = setInterval(function() {
+
+    angle += 9;
+
+    let x = centerX + radius * Math.cos(angle * Math.PI / 190);
+    let y = centerY + radius * Math.sin(angle * Math.PI / 190);
+    let z = centerZ + radius * Math.sin(angle * Math.PI / 190);
+
+    img.style.left = x + "px";
+    img.style.top  = y + "px";
+    img.style.top  = z + "px";
+
+  }, 50);
+>>>>>>> fa5b7ab25643b5b1317d2bed103b2852f7c76a36
 }
 
 document.addEventListener('mousemove', handleInput);
