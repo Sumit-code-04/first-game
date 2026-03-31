@@ -34,27 +34,11 @@ function handleInput(e) {
     relativeX = mouseX - (rect.left + window.scrollX);
     relativeY = mouseY - (rect.top + window.scrollY);
 
-
     if(cursor) {
         cursor.style.left = mouseX + 'px';
         cursor.style.top = mouseY + 'px';
         cursor.style.display = "block"; 
     }
-
-  interval = setInterval(function() {
-
-    angle += 9;
-
-    let x = centerX + radius * Math.cos(angle * Math.PI / 190);
-    let y = centerY + radius * Math.sin(angle * Math.PI / 190);
-    let z = centerZ + radius * Math.sin(angle * Math.PI / 190);
-
-    img.style.left = x + "px";
-    img.style.top  = y + "px";
-    img.style.top  = z + "px";
-
-  }, 50);
-
 }
 
 document.addEventListener('mousemove', handleInput);
@@ -78,7 +62,7 @@ function update() {
 
     angle += (currentSpeed * direction);
 
-    if (distance < 35) {
+    if (distance < 25) {
         alert("Caught! Restarting...Again");
         location.reload();
         return;
